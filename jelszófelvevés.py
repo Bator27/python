@@ -6,5 +6,5 @@ while jelszo != JELSZO:
     jelszo = input('Mi a jelszava?')
     if jelszo != JELSZO:
         print('Nem jo jelszot addot meg')
-        pass    
-print('ügyes vagy')        
+        pass
+print('ügyes vagy')
