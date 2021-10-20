@@ -1,0 +1,3 @@
+wr = open("fnev.txt","a")
+wr.write("Zádori-Fekete Dávid")
+wr.close

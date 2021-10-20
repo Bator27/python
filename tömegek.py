@@ -15,3 +15,8 @@ for tömeg in tömegek:
         volt_nehez = True
         nehez_szama +=1
         nehezek_ossztomege += tömeg
+        if volt_nehez:
+            print('volt 9300 kilónál nehezebb jármű')
+
+print(nehezek_ossztomege)
+print(nehez_szama)
