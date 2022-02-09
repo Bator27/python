@@ -1,0 +1,4 @@
+A zsák össz súlya: 55
+ Igen van None
+ A legkisebb a zsákban kg: 2
+ A legnagyobb a zsákban kg: 20
