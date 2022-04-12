@@ -1,18 +1,17 @@
+wr = open("szó.txt", 'w')
 #1
-from re import X
-
-
 def nev(n):
     if n != 0:
         nev(n-1)
         print("Dávid")
+        wr.write("Dávid")
 nev(100)
 #2
 def abakóba_vált(liter):
     return liter/58.6
 
 print('999 liter az', abakóba_vált(999),'akó.')
-
+wr.write('999 liter az', abakóba_vált(999),'akó.')
 #3
 def betűkkel(szám):
     számok_nevei = ['nulla','egy','kettő','három','négy','öt','hat','hét','nyolc','kilenc']
@@ -20,6 +19,7 @@ def betűkkel(szám):
 
 for szám in range(10):
     print(szám, betűkkel(szám))
+wr.write(f'{szám}, betűkkel{(szám)}')
 
 #4
 szo = input('Kérem adjon meg egy szót!')
@@ -30,6 +30,7 @@ def névelő(szó):
     else:
         return 'a'
 print(névelő(szo), szo)
+wr.write(f'névelő({szo}), {szo}')
 #5
 def hangrend(szó):
     mély_magánhangzók = ['a','á','o','ó','u','ú']
@@ -50,13 +51,22 @@ def hangrend(szó):
         return('vegyes')
     else:
         return('nincs magánhangzó')
-
+#6
 szó = input('Írj ide egy szót! ')
 print(hangrend(szó))
+wr.write(f'hangrend({szó})')
     
 def monogramm(nev):
     szoköz = nev.index('')
     return nev[0] + '.' + nev[szoköz+1]
 
-nev = input('Kérem adj meg a nevét')
+nev = input('Kérem adj meg a nevét!')
 print(monogramm(nev),nev)
+wr.write(monogramm(nev),nev)
+#7
+def kisb(nev):
+    return nev.lower()
+    return nev.upper()
+print(kisb(nev), nev)
+wr.write(kisb(nev), nev)
+wr.close

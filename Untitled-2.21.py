@@ -1,0 +1,2 @@
+nev = ("Lajos")
+print(nev)

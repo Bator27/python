@@ -50,7 +50,7 @@ def hangrend(szó):
         return('vegyes')
     else:
         return('nincs magánhangzó')
-
+#6
 szó = input('Írj ide egy szót! ')
 print(hangrend(szó))
     
@@ -60,3 +60,8 @@ def monogramm(nev):
 
 nev = input('Kérem adj meg a nevét')
 print(monogramm(nev),nev)
+#7
+def kisb(nev):
+    return nev.lower()
+    return nev.upper()
+print(kisb(nev), nev)
