@@ -1,0 +1,17 @@
+def folyadék(halmazállapot):
+    if halmazállapot == "folyékony":
+        return "Víz"
+    elif halmazállapot == "szilárd":
+        return "jég"
+    else:
+        return "Gőz"
+def hőmésréklet(hőm):
+    if hőm >= 100:
+        return "forró"
+    elif 100 > hőm > 50:
+        return "meleg"
+    else:
+        return "fagyos"
+while hőm:
+    hőm = int(input("Hány fokos?"))
+    print(hőm)

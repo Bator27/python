@@ -1,0 +1,7 @@
+halmazállapot = input("Adja meg a víz halmazállapotát!")
+if halmazállapot == "folyékony":
+    print("Víz")
+elif halmazállapot == "szilárd":
+    print("jég")
+else:
+    print("Gőz") 
